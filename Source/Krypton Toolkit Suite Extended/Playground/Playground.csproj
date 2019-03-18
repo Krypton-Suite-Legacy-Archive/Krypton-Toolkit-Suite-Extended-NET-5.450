@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <ApplicationVersion>1.0.14.0</ApplicationVersion>
+    <AssemblyVersion>5.450.415.0</AssemblyVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,27 +35,104 @@
     <WarningLevel>4</WarningLevel>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\KR 48 x 48 Orange.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Krypton Toolkit, Version=4.50.595.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+    <Reference Include="Global Utilities, Version=5.450.507.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>A:\Developer DLLs\Krypton DLLs\Versions\4.50\Krypton Toolkit.dll</HintPath>
+      <HintPath>..\Global Utilities\bin\Debug\Global Utilities.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CalandarAndControls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalandarAndControls.Designer.cs">
+      <DependentUpon>CalandarAndControls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColourTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColourWheel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColourWheel.Designer.cs">
+      <DependentUpon>ColourWheel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandLinkStyles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandLinkStyles.Designer.cs">
+      <DependentUpon>CommandLinkStyles.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoreControls.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyGridTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scrollbars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scrollbars.Designer.cs">
+      <DependentUpon>Scrollbars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestRig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WizardTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="CalandarAndControls.resx">
+      <DependentUpon>CalandarAndControls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColourTest.resx">
+      <DependentUpon>ColourTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColourWheel.resx">
+      <DependentUpon>ColourWheel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandLinkStyles.resx">
+      <DependentUpon>CommandLinkStyles.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxTest.resx">
+      <DependentUpon>MessageBoxTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoreControls.resx">
+      <DependentUpon>MoreControls.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -64,7 +142,23 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="PropertyGridTest.resx">
+      <DependentUpon>PropertyGridTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scrollbars.resx">
+      <DependentUpon>Scrollbars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestRig.resx">
+      <DependentUpon>TestRig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WizardTest.resx">
+      <DependentUpon>WizardTest.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -87,10 +181,29 @@
       <Project>{1C9153E4-CDC4-44C9-9794-1D144FE87A1F}</Project>
       <Name>Extended Controls</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Tooling\Tooling.csproj">
-      <Project>{efb997fb-1e05-444b-ba02-16c004e1a111}</Project>
-      <Name>Tooling</Name>
+    <ProjectReference Include="..\Extended File Dialogs\Extended File Dialogs.csproj">
+      <Project>{D4644D8A-1C7A-43B6-8461-AB0B56FD6463}</Project>
+      <Name>Extended File Dialogs</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Krypton Outlook Grid\Krypton Outlook Grid.csproj">
+      <Project>{2A10C696-45AD-48AA-8EAD-2CB322672972}</Project>
+      <Name>Krypton Outlook Grid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tooling\Core.csproj">
+      <Project>{efb997fb-1e05-444b-ba02-16c004e1a111}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\..\Assets\PNG\32 x 32\KR 32 x 32 Orange.png">
+      <Link>Resources\KR 32 x 32 Orange.png</Link>
+    </Content>
+    <None Include="Resources\KR 48 x 48 Orange.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="KryptonToolkitSuite5450">
+      <Version>5.450.794</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

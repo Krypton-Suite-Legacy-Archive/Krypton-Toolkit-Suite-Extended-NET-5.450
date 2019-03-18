@@ -1,4 +1,4 @@
-# Krypton-Toolkit-Suite-Extended-NET-4.50
+# <img src="https://raw.githubusercontent.com/Wagnerp/Krypton-Toolkit-Suite-Extended-NET-5.470/master/Assets/PNG/64%20x%2064/KR%2064%20%20x%2064%20Orange.png" /> Toolkit Suite Extended .NET 5.450
 
 =======
 
@@ -8,11 +8,26 @@
 
 ======
 
+## 2019-03-01 Build 796
+* Build 796 (build date Monday 18th, March 2019) is now available on NuGet
+* New colour wheel colour dialog
+* New toggle switch control
+* New rounded textbox control
+* Integrated `ookii.dialogs` code
+* Working on new folder browser dialog and file browser
+* New theme chooser component (proof of concept for a more sophisticated UI for next update)
+* Groundwork for new elements for next update
+* Upgraded to Krypton Toolkit Suite - version: **5.450.794**
+* Removed **LinqBridge** requirement, [#48](https://github.com/Wagnerp/Krypton-Toolkit-Suite-Extended-NET-5.470/issues/48)
+* Reorganised `Playground` test application
+
+======
+
 ## 2018-06-25 Initial commit
 * One **new** theme called `Slate Silver`, stylised for the 2007/2010 and 2013 theme sets.
 * There are now 50+ **new** palettes to choose from.
 * A new toolstrip label capable of background gradeints is now available to use, as per [#28](https://github.com/Wagnerp/Krypton-Toolkit-Suite-Extended-NET-4.70/issues/28).
-* Colours... colours... colours... We now have 26 **new** colours to choose from! Find the `xml` files in the `Palettes` folder, this will be updated regulary, so be sure to come back often! Alternatively, if you would like to request/submit a colour palette, then please submit a base colour in a hexadecimal format plus a suitable name for it on the `New Palette Ideas` issues thread.
+* Colours... colours... colours... We now have 26 **new** colours to choose from! Find the `xml` files in the `Palettes` folder, this will be updated regularly, so be sure to come back often! Alternatively, if you would like to request/submit a colour palette, then please submit a base colour in a hexadecimal format plus a suitable name for it on the `New Palette Ideas` issues thread.
 * Laid basic foundation for a designable `Krypton MessageBox`.
 * `KryptonNumericUpDown` control can now be used on menu & toolbar controls.
 * Base groundwork for XML updater & parsing XML files has been completed

@@ -1,15 +1,19 @@
 ﻿using System;
 using System.Drawing;
-using System.Globalization;
 
-namespace Tooling.Classes.Other
+namespace Core.Classes.Other
 {
     public class ConversionMethods
     {
-        #region Variables
-        int _red, _green, _blue;
+        #region Constant Variables
+        private const int MINIMUM_COLOUR_CHANNEL_VALUE = 0, MAXIMUM_COLOUR_CHANNEL_VALUE = 255;
 
-        double _alpha;
+        private const double MINIMUM_ALPHA_CHANNEL_VALUE = 0.0, MAXIMUM_ALPHA_CHANNEL_VALUE = 1.0;
+        #endregion
+
+        #region Variables
+        private int _red, _green, _blue;
+        private double _alpha;
         #endregion
 
         #region Properties
@@ -93,9 +97,17 @@ namespace Tooling.Classes.Other
         /// <returns></returns>
         public Color ConvertHexadecimalToRGB(string hexColour)
         {
-            int red = 0, green = 0, blue = 0;
+            //int red = 0, green = 0, blue = 0;
 
-            if (hexColour.IndexOf('#') != -1)
+            //Color rgbColour = ColorTranslator.FromHtml(hexColour);
+
+            //red = Convert.ToInt32(rgbColour.R);
+
+            //green = Convert.ToInt32(rgbColour.G);
+
+            //blue = Convert.ToInt32(rgbColour.B);
+
+            /*if (hexColour.IndexOf('#') != -1)
             {
                 hexColour = hexColour.Replace("#", "");
             }
@@ -115,11 +127,71 @@ namespace Tooling.Classes.Other
                 green = int.Parse(hexColour[1].ToString() + hexColour[1].ToString(), NumberStyles.AllowHexSpecifier);
 
                 blue = int.Parse(hexColour[2].ToString() + hexColour[2].ToString(), NumberStyles.AllowHexSpecifier);
+            }*/
+
+            //SetRGB(red, green, blue);
+
+            Color output = ColorTranslator.FromHtml(hexColour);
+
+            return output;
+        }
+
+        //public Color ConvertHexadecimalToRGBTest(string hexColour)
+        //{
+        //    if (hexColour.StartsWith("#"))
+        //    {
+        //        hexColour = hexColour.Remove(0, 1);
+        //    }
+
+        //    byte red, green, blue;
+
+        //    if (hexColour.Length == 3)
+        //    {
+        //        red = Convert.ToByte(hexColour[0] + "" + hexColour[0], 16);
+
+        //        green = Convert.ToByte(hexColour[1] + "" + hexColour[1], 16);
+
+        //        blue = Convert.ToByte(hexColour[2] + "" + hexColour[2], 16);
+        //    }
+        //    else if (hexColour.Length == 6)
+        //    {
+        //        red = Convert.ToByte(hexColour[0] + "" + hexColour[1], 16);
+
+        //        green = Convert.ToByte(hexColour[2] + "" + hexColour[3], 16);
+
+        //        blue = Convert.ToByte(hexColour[4] + "" + hexColour[5], 16);
+        //    }
+        //    else
+        //    {
+        //        throw new ArgumentNullException($"Hex colour value: '{ hexColour.ToUpper() }' is invalid.");
+        //    }
+
+        //    SetRGB(Convert.ToInt32(red), Convert.ToInt32(green), Convert.ToInt32(blue));
+
+        //    return Color.FromArgb(255, red, green, blue);
+        //}
+
+        public static int[] ConvertHexadecimalToRGBTest(string hexColour)
+        {
+            int[] result;
+
+            try
+            {
+                if (!hexColour.StartsWith("#"))
+                {
+                    hexColour = string.Concat("#", hexColour);
+                }
+
+                Color colourResult = ColorTranslator.FromHtml(hexColour);
+
+                result = new int[] { colourResult.R, colourResult.G, colourResult.B };
+            }
+            catch (Exception)
+            {
+                result = new int[3];
             }
 
-            SetRGB(red, green, blue);
-
-            return Color.FromArgb(red, green, blue);
+            return result;
         }
 
         /// <summary>
@@ -140,11 +212,11 @@ namespace Tooling.Classes.Other
         /// <param name="blue">The blue.</param>
         public void SetRGB(int red, int green, int blue)
         {
-            Red = red;
+            SetRed(red);
 
-            Green = green;
+            SetGreen(green);
 
-            Blue = blue;
+            SetBlue(blue);
         }
 
         /// <summary>
@@ -156,13 +228,118 @@ namespace Tooling.Classes.Other
         /// <param name="alpha">The alpha.</param>
         public void SetRGBA(int red, int green, int blue, double alpha = 0.5)
         {
-            Red = red;
+            SetRed(red);
 
-            Green = green;
+            SetGreen(green);
 
-            Blue = blue;
+            SetBlue(blue);
 
-            Alpha = alpha;
+            SetAlpha(alpha);
+        }
+
+        /// <summary>
+        /// Formats the colour RGB string.
+        /// </summary>
+        /// <param name="colour">The colour.</param>
+        /// <returns></returns>
+        public static String FormatColourRGBString(Color colour)
+        {
+            return $"{ colour.R.ToString() }, { colour.G.ToString() }, { colour.B.ToString() }";
+        }
+
+        /// <summary>
+        /// Formats the colour ARGB string.
+        /// </summary>
+        /// <param name="colour">The colour.</param>
+        /// <returns></returns>
+        public static String FormatColourARGBString(Color colour)
+        {
+            return $"{ colour.A.ToString() }, { colour.R.ToString() }, { colour.G.ToString() }, { colour.B.ToString() }";
+        }
+
+        public static String FormatColourToHexadecimal(Color colour)
+        {
+            int redValue = colour.R, greenValue = colour.G, blueValue = colour.B;
+
+            return ColorTranslator.FromHtml(string.Format("#{0:X2}{1:X2}{2:X2}", redValue, greenValue, blueValue)).Name.Remove(0, 1);
+        }
+        #endregion
+
+        #region Setters & Getters        
+        /// <summary>
+        /// Sets the red.
+        /// </summary>
+        /// <param name="redValue">The red value.</param>
+        public void SetRed(int redValue)
+        {
+            Red = redValue;
+        }
+
+        /// <summary>
+        /// Gets the red.
+        /// </summary>
+        /// <returns></returns>
+        public int GetRed()
+        {
+            if (Red < MINIMUM_COLOUR_CHANNEL_VALUE || Red > MAXIMUM_COLOUR_CHANNEL_VALUE)
+            {
+                return Red;
+            }
+            else
+            {
+                return MAXIMUM_COLOUR_CHANNEL_VALUE;
+            }
+        }
+
+        public void SetGreen(int greenValue)
+        {
+            Green = greenValue;
+        }
+
+        public int GetGreen()
+        {
+            if (Green < MINIMUM_COLOUR_CHANNEL_VALUE || Green > MAXIMUM_COLOUR_CHANNEL_VALUE)
+            {
+                return Green;
+            }
+            else
+            {
+                return MAXIMUM_COLOUR_CHANNEL_VALUE;
+            }
+        }
+
+        public void SetBlue(int blueValue)
+        {
+            Blue = blueValue;
+        }
+
+        public int GetBlue()
+        {
+            if (Blue < MINIMUM_COLOUR_CHANNEL_VALUE || Blue > MAXIMUM_COLOUR_CHANNEL_VALUE)
+            {
+                return Blue;
+            }
+            else
+            {
+                return MAXIMUM_COLOUR_CHANNEL_VALUE;
+            }
+        }
+
+        public void SetAlpha(double alphaValue)
+        {
+            Alpha = alphaValue;
+        }
+
+        public double GetAlpha()
+        {
+            if (Alpha < MINIMUM_ALPHA_CHANNEL_VALUE || Alpha > MAXIMUM_ALPHA_CHANNEL_VALUE)
+            {
+                return Alpha;
+            }
+            else
+            {
+                return 0.5;
+            }
         }
         #endregion
     }
