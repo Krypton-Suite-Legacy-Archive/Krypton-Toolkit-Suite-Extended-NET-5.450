@@ -2,7 +2,11 @@
 
 =======
 
-## An extension to the Krypton Toolkit suite of controls for .NET framework 4.5
+| NuGet | Current NuGet Version | Github License |
+|---|---|---|
+| [![NuGet](https://img.shields.io/badge/NuGet-Krypton%20Extended%20.NET%205.450-brightgreen.svg)](https://www.nuget.org/packages/KryptonExtendedToolkit5450/) | ![Nuget](https://img.shields.io/nuget/v/KryptonExtendedToolkit5450.svg) | ![GitHub](https://img.shields.io/github/license/Wagnerp/Krypton-Toolkit-Suite-Extended-NET-5.450.svg)
+
+=======
 
 ## NOTE: 20/06/2018 Background menu colours will be implemented in the comming weeks. Stay tuned for updates!
 
