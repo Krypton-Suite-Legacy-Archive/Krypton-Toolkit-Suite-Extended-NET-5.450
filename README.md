@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/Wagnerp/Krypton-Toolkit-Suite-Extended-NET-5.470/master/Assets/PNG/64%20x%2064/KR%2064%20%20x%2064%20Orange.png" /> Toolkit Suite Extended .NET 5.450
+# <img src="https://raw.githubusercontent.com/Wagnerp/Krypton-Toolkit-Suite-Extended-NET-5.450/master/Assets/PNG/64%20x%2064/KR%2064%20%20x%2064%20Orange.png" /> Toolkit Suite Extended .NET 5.450
 
 =======
 
@@ -12,6 +12,21 @@
 
 ======
 
+## 2019-04-07 Build 855 April Update
+* Build 855 (build date Sunday 7th, April 2019) is now available on NuGet
+* New palette theme selector
+* New `KryptonToastNotification` window
+* New circular progressbar control
+* Random password generator (for use on future user creation dialog)
+* New developer API tools for internal development of the toolkit
+* Begun re-working the `Palette Explorer` application
+* New `Palette Upgrade Tool` application for upgrading any older palette `xml` files
+* Upgraded to Krypton Toolkit Suite - version: **5.450.794**
+* Theme `*.xml` files are now available to view and edit in the Visual Studio solution under the **themes** folder
+* All theme files are now bundled with the NuGet package
+
+======
+
 ## 2019-03-01 Build 796
 * Build 796 (build date Monday 18th, March 2019) is now available on NuGet
 * New colour wheel colour dialog
@@ -22,7 +37,7 @@
 * New theme chooser component (proof of concept for a more sophisticated UI for next update)
 * Groundwork for new elements for next update
 * Upgraded to Krypton Toolkit Suite - version: **5.450.794**
-* Removed **LinqBridge** requirement, [#48](https://github.com/Wagnerp/Krypton-Toolkit-Suite-Extended-NET-5.470/issues/48)
+* Removed **LinqBridge** requirement, [#48](https://github.com/Wagnerp/Krypton-Toolkit-Suite-Extended-NET-5.450/issues/48)
 * Reorganised `Playground` test application
 
 ======

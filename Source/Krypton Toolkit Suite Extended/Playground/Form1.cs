@@ -3,6 +3,8 @@ using Core.Classes.Other;
 using Core.UX;
 using Core.UX.Colours;
 using Core.UX.Options;
+using ExtendedControls.Base.Code.Development;
+using ExtendedControls.Base.Enumerations;
 using ExtendedControls.Enumerations;
 using ExtendedControls.ExtendedToolkit.MessageBoxes.UI;
 using ExtendedControls.ExtendedToolkit.UI.Colours;
@@ -14,6 +16,7 @@ using KryptonApplicationUpdater.Classes.SettingsManager;
 //using KryptonApplicationUpdater.Interfaces;
 
 using KryptonExtendedToolkit.Base.Code;
+using KryptonExtendedToolkit.ExtendedToolkit.Controls;
 using System;
 using System.Diagnostics;
 using System.Drawing;
@@ -31,6 +34,7 @@ namespace Playground
         private MostRecentlyUsedFileManager mostRecentlyUsedFileManager;
         private Version currentVersion = Assembly.GetExecutingAssembly().GetName().Version;
         private ToolStripNonClientRenderer toolStripNonClientRenderer;
+        Assembly _currentAssembly = Assembly.GetExecutingAssembly();
 
         public Form1()
         {
@@ -79,7 +83,7 @@ namespace Playground
                 kcmbGradientDirection.Items.Add(lgm.ToString().ToUpper());
             }
 
-            //kcmbGradientDirection.d
+            DevelopmentInformation.SetBuildInformation(this, _currentAssembly, DevelopmentState.BETA);
         }
 
         private void MyOwnRecentFileGotClicked_Handler(object sender, EventArgs e)
@@ -178,6 +182,26 @@ namespace Playground
             ColourRGBToHexadecimalConverter colourRGBToHexadecimalConverter = new ColourRGBToHexadecimalConverter();
 
             colourRGBToHexadecimalConverter.Show();
+        }
+
+        private void tsAlignLeft_Click(object sender, EventArgs e)
+        {
+            //rxrbTextPad.SelectionAlignment = TextAlignment.LEFT;
+        }
+
+        private void tsAlignCentre_Click(object sender, EventArgs e)
+        {
+            //rxrbTextPad.SelectionAlignment = TextAlignment.CENTRE;
+        }
+
+        private void tsAlignRight_Click(object sender, EventArgs e)
+        {
+            //rxrbTextPad.SelectionAlignment = TextAlignment.RIGHT;
+        }
+
+        private void tsJustify_Click(object sender, EventArgs e)
+        {
+            //rxrbTextPad.SelectionAlignment = TextAlignment.JUSTIFY;
         }
 
         private void kbtnHexToRGB_Click(object sender, EventArgs e)
@@ -316,6 +340,7 @@ namespace Playground
         private void kuacsbElevate_Click(object sender, EventArgs e)
         {
 
+            UtilityMethods.ElevateProcessWithAdministrativeRights(@"C:\\Windows\\Notepad.exe");
         }
 
         private void kryptonButton5_Click(object sender, EventArgs e)
@@ -453,6 +478,18 @@ namespace Playground
             TestRig tr = new TestRig();
 
             tr.Show();
+        }
+
+        private void kryptonButton1_Click_1(object sender, EventArgs e)
+        {
+            FlashingLabelTest flashingLabel = new FlashingLabelTest();
+
+            flashingLabel.Show();
+        }
+
+        private void toolStripMenuItemUACSheld1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

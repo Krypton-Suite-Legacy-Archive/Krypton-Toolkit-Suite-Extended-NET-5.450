@@ -1,6 +1,5 @@
 ﻿using ComponentFactory.Krypton.Toolkit;
 using Core.Classes.Options.Theming;
-using Core.Classes.Theming;
 using Core.Settings.Classes;
 using System;
 using System.Windows.Forms;
@@ -1064,7 +1063,7 @@ namespace Core.UX.Options
         private KryptonPalette _palette = new KryptonPalette();
         private Classes.Theming.ThemeManager _themeManager = new Classes.Theming.ThemeManager();
         private ThemingLogic _themingLogic = new ThemingLogic();
-        PaletteThemeSettingsManager _paletteThemeSettingsManager = new PaletteThemeSettingsManager();
+        private PaletteThemeSettingsManager _paletteThemeSettingsManager = new PaletteThemeSettingsManager();
         #endregion
 
         public GlobalOptionsMenu()
@@ -1097,7 +1096,7 @@ namespace Core.UX.Options
 
             ktxtCustomPath.Text = _palette.GetCustomisedKryptonPaletteFilePath();
 
-           Classes.Theming.ThemeManager.SetCustomTheme(_manager, _palette, ktxtCustomPath.Text);
+            Classes.Theming.ThemeManager.SetCustomTheme(_manager, _palette, ktxtCustomPath.Text);
         }
 
         private void kcmbPaletteTheme_SelectedIndexChanged(object sender, EventArgs e)
