@@ -27,13 +27,13 @@ Please refer to [examples](https://github.com/Wagnerp/Krypton-Toolkit-Suite-Exte
 * Build 10xx (build date Saturday 1st, June 2019) is now available on NuGet
 -->
 
-<!--======
+======
 
-## 2019-05-01 Build 9xx - May Update
+## 2019-05-01 Build 935 - May Update
 * Outlook 2003 style toast notification
 * File checksum calculator (MD5, SHA-1, SHA-256, SHA-384, SHA-512 and RIPEMD-160)
 * New `KryptonPaletteManager` class for dealing with creating custom `KryptonPalette`'s
-* Ribbon enhancements, merge two ribbons together
+* Ribbon enhancements, merge two ribbons together [#150](https://github.com/Wagnerp/Krypton-NET-5.470/issues/150)
 * Capture version information from another file
 * Playground application reorganisation
 * Images of controls to show developers what they look like
@@ -44,7 +44,6 @@ Please refer to [examples](https://github.com/Wagnerp/Krypton-Toolkit-Suite-Exte
 * XML documentation files for DLLs
 * Upgraded to Krypton Toolkit Suite - version: **5.450.901**
 * Build 9xx (build date Wednesday 1st, May 2019) is now available on NuGet
--->
 
 ======
 
