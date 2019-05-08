@@ -29,6 +29,13 @@ Please refer to [examples](https://github.com/Wagnerp/Krypton-Toolkit-Suite-Exte
 
 ======
 
+## 2019-05-08 Build 937 = Fix Issue **#3**
+* Fix [#3](https://github.com/Wagnerp/Krypton-Toolkit-Suite-Extended-NET-5.450/issues/3)
+* Upgraded to Krypton Toolkit Suite - version: **5.450.968**
+* Build 937 (build date Wednesday 8th, May 2019) is now available on NuGet
+
+======
+
 ## 2019-05-01 Build 935 - May Update
 * Outlook 2003 style toast notification
 * File checksum calculator (MD5, SHA-1, SHA-256, SHA-384, SHA-512 and RIPEMD-160)
@@ -43,7 +50,7 @@ Please refer to [examples](https://github.com/Wagnerp/Krypton-Toolkit-Suite-Exte
 * General tidyup of code & API updates
 * XML documentation files for DLLs
 * Upgraded to Krypton Toolkit Suite - version: **5.450.901**
-* Build 9xx (build date Wednesday 1st, May 2019) is now available on NuGet
+* Build 935 (build date Wednesday 1st, May 2019) is now available on NuGet
 
 ======
 
