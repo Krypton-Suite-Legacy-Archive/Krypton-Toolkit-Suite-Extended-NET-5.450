@@ -16,16 +16,19 @@
 
 Please refer to [examples](https://github.com/Wagnerp/Krypton-Toolkit-Suite-Extended-NET-5.450/blob/master/Examples.md) to see what each control looks like.
 
-<!--======
-## 2019-06-01 Build 10xx - June Update
+======
+## 2019-06-01 Build 1030 - June Update
+* New `issue` templates
+* Implemented repository tags for better GitHub SEO
+* Implement `WindowsAPICodePackModel.cs` class for dealing with **WindowsAPICodePack** features 
 * New `Palette Explorer` controls
 * Merged all settings into `Toolkit Settings.dll`
 * Begun work on [#70](https://github.com/Wagnerp/Krypton-Toolkit-Suite-Extended-NET-5.470/issues/70)
 * Implemented [NaviSuite](https://github.com/jacobmesu/Guifreaks-Navisuite) by [Jacobmesu](https://github.com/jacobmesu)
 * New file varifier app to work with May's file checksum calculator
-* Upgraded to Krypton Toolkit Suite - version: **5.470.xxx**
-* Build 10xx (build date Saturday 1st, June 2019) is now available on NuGet
--->
+* New `KryptonFileInformationDialog` to replace the Windows default one with some extra features
+* Upgraded to Krypton Toolkit Suite - version: **5.450.1204**
+* Build 1030 (build date Saturday 1st, June 2019) is now available on NuGet
 
 ======
 
