@@ -1,5 +1,5 @@
-﻿using ExtendedControls.ExtendedToolkit.MessageBoxes.UI;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
+using ExtendedControls.ExtendedToolkit.MessageBoxes.UI;
 
 namespace Playground
 {
@@ -110,7 +110,6 @@ namespace Playground
             this.tsJustify = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.tsInsertText = new System.Windows.Forms.ToolStripButton();
-            //this.rxrbTextPad = new ExtendedControls.ExtendedToolkit.Controls.KryptonRichTextBoxExtended();
             this.tsTest = new System.Windows.Forms.ToolStrip();
             this.newToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -127,7 +126,6 @@ namespace Playground
             this.toolStripMenuItemUACSheld1 = new KryptonExtendedToolkit.ExtendedToolkit.ToolstripControls.ToolStripMenuItemUACSheld();
             this.krtbEditor = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
             this.klblAdminMode = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            //this.kryptonRichTextBoxExtended1 = new ExtendedControls.ExtendedToolkit.Controls.KryptonRichTextBoxExtended();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.etslBlinkTest = new ExtendedControls.ExtendedToolkit.ToolstripControls.ExtendedToolStripStatusLabel();
@@ -189,7 +187,7 @@ namespace Playground
             // 
             this.rtbTextPad.Location = new System.Drawing.Point(16, 45);
             this.rtbTextPad.Name = "rtbTextPad";
-            this.rtbTextPad.Size = new System.Drawing.Size(475, 450);
+            this.rtbTextPad.Size = new System.Drawing.Size(475, 470);
             this.rtbTextPad.TabIndex = 7;
             this.rtbTextPad.Text = "";
             // 
@@ -520,7 +518,6 @@ namespace Playground
             this.kryptonPanel1.Controls.Add(this.kcmbGradientDirection);
             this.kryptonPanel1.Controls.Add(this.kryptonLabel1);
             this.kryptonPanel1.Controls.Add(this.toolStrip2);
-            //this.kryptonPanel1.Controls.Add(this.rxrbTextPad);
             this.kryptonPanel1.Controls.Add(this.kuacsbElevate);
             this.kryptonPanel1.Controls.Add(this.tsTest);
             this.kryptonPanel1.Controls.Add(this.toolStrip1);
@@ -600,8 +597,8 @@ namespace Playground
             this.kryptonCommandLinkButton2.Location = new System.Drawing.Point(902, 23);
             this.kryptonCommandLinkButton2.Name = "kryptonCommandLinkButton2";
             this.kryptonCommandLinkButton2.OverrideFocus.Border.Draw = ComponentFactory.Krypton.Toolkit.InheritBool.True;
-            this.kryptonCommandLinkButton2.OverrideFocus.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
+            this.kryptonCommandLinkButton2.OverrideFocus.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonCommandLinkButton2.OverrideFocus.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.kryptonCommandLinkButton2.Size = new System.Drawing.Size(250, 55);
@@ -738,17 +735,6 @@ namespace Playground
             this.tsInsertText.Name = "tsInsertText";
             this.tsInsertText.Size = new System.Drawing.Size(23, 22);
             this.tsInsertText.Text = "Insert Text";
-            // 
-            // rxrbTextPad
-            // 
-            //this.rxrbTextPad.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            //this.rxrbTextPad.Location = new System.Drawing.Point(159, 56);
-            //this.rxrbTextPad.Name = "rxrbTextPad";
-            //this.rxrbTextPad.Size = new System.Drawing.Size(151, 117);
-            //this.rxrbTextPad.TabIndex = 6;
-            //this.rxrbTextPad.Text = "kryptonRichTextBoxExtended2";
-            //popupPositionValues8.PlacementMode = ComponentFactory.Krypton.Toolkit.PlacementMode.Bottom;
-            //this.rxrbTextPad.ToolTipValues.ToolTipPosition = popupPositionValues8;
             // 
             // tsTest
             // 
@@ -906,17 +892,6 @@ namespace Playground
             popupPositionValues10.PlacementMode = ComponentFactory.Krypton.Toolkit.PlacementMode.Bottom;
             this.klblAdminMode.ToolTipValues.ToolTipPosition = popupPositionValues10;
             this.klblAdminMode.Values.Text = "Is running in Administrator mode: No";
-            // 
-            // kryptonRichTextBoxExtended1
-            //// 
-            //this.kryptonRichTextBoxExtended1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            //this.kryptonRichTextBoxExtended1.Location = new System.Drawing.Point(0, 0);
-            //this.kryptonRichTextBoxExtended1.Name = "kryptonRichTextBoxExtended1";
-            //this.kryptonRichTextBoxExtended1.Size = new System.Drawing.Size(100, 96);
-            //this.kryptonRichTextBoxExtended1.TabIndex = 0;
-            //this.kryptonRichTextBoxExtended1.Text = "";
-            //popupPositionValues11.PlacementMode = ComponentFactory.Krypton.Toolkit.PlacementMode.Bottom;
-            //this.kryptonRichTextBoxExtended1.ToolTipValues.ToolTipPosition = popupPositionValues11;
             // 
             // statusStrip1
             // 
