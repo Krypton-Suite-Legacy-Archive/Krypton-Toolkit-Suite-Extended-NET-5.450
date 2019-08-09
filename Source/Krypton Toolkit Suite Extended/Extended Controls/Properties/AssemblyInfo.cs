@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Extended Controls")]
-[assembly: AssemblyDescription("An extention to the Krypton toolkit suite for .NET framework 4.7 (https://github.com/Wagnerp/Krypton-NET-5.450).")]
+[assembly: AssemblyDescription("An extention to the Krypton toolkit suite for .NET framework 4.5 (https://github.com/Wagnerp/Krypton-NET-5.450).")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Extended Controls")]
