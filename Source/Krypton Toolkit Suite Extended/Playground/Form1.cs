@@ -2,7 +2,7 @@
 /*
  * Use of this source code is governed by a BSD-style
  * license that can be found in the LICENSE.md file or at
- * https://github.com/Wagnerp/Krypton-Toolkit-Suite-Extended-NET-5.450/blob/master/LICENSE
+ * https://github.com/Wagnerp/Krypton-Toolkit-Suite-Extended-NET-5.470/blob/master/LICENSE
  *
  */
 #endregion
@@ -189,22 +189,22 @@ namespace Playground
 
         private void tsAlignLeft_Click(object sender, EventArgs e)
         {
-            //rxrbTextPad.SelectionAlignment = TextAlignment.LEFT;
+            rxrbTextPad.SelectionAlignment = TextAlignment.LEFT;
         }
 
         private void tsAlignCentre_Click(object sender, EventArgs e)
         {
-            //rxrbTextPad.SelectionAlignment = TextAlignment.CENTRE;
+            rxrbTextPad.SelectionAlignment = TextAlignment.CENTRE;
         }
 
         private void tsAlignRight_Click(object sender, EventArgs e)
         {
-            //rxrbTextPad.SelectionAlignment = TextAlignment.RIGHT;
+            rxrbTextPad.SelectionAlignment = TextAlignment.RIGHT;
         }
 
         private void tsJustify_Click(object sender, EventArgs e)
         {
-            //rxrbTextPad.SelectionAlignment = TextAlignment.JUSTIFY;
+            rxrbTextPad.SelectionAlignment = TextAlignment.JUSTIFY;
         }
 
         private void kbtnHexToRGB_Click(object sender, EventArgs e)
