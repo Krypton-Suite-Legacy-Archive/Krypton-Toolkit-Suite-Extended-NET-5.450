@@ -100,7 +100,7 @@ namespace Playground
             this.tsJustify = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.tsInsertText = new System.Windows.Forms.ToolStripButton();
-            this.rxrbTextPad = new ExtendedControls.ExtendedToolkit.Controls.KryptonRichTextBoxExtended();
+            //this.rxrbTextPad = new ExtendedControls.ExtendedToolkit.Controls.KryptonRichTextBoxExtended();
             this.tsTest = new System.Windows.Forms.ToolStrip();
             this.newToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -117,7 +117,7 @@ namespace Playground
             this.toolStripMenuItemUACSheld1 = new KryptonExtendedToolkit.ExtendedToolkit.ToolstripControls.ToolStripMenuItemUACSheld();
             this.krtbEditor = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
             this.klblAdminMode = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonRichTextBoxExtended1 = new ExtendedControls.ExtendedToolkit.Controls.KryptonRichTextBoxExtended();
+            //this.kryptonRichTextBoxExtended1 = new ExtendedControls.ExtendedToolkit.Controls.KryptonRichTextBoxExtended();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.etslBlinkTest = new ExtendedControls.ExtendedToolkit.ToolstripControls.ExtendedToolStripStatusLabel();
@@ -179,7 +179,7 @@ namespace Playground
             // 
             this.rtbTextPad.Location = new System.Drawing.Point(16, 45);
             this.rtbTextPad.Name = "rtbTextPad";
-            this.rtbTextPad.Size = new System.Drawing.Size(475, 470);
+            this.rtbTextPad.Size = new System.Drawing.Size(475, 450);
             this.rtbTextPad.TabIndex = 7;
             this.rtbTextPad.Text = "";
             // 
@@ -1037,7 +1037,7 @@ namespace Playground
         private System.Windows.Forms.ToolStrip toolStrip1;
         private ExtendedControls.ExtendedToolkit.ToolstripControls.KryptonNumericUpDownToolStripItem kryptonNumericUpDownToolStripItem1;
         private KryptonExtendedToolkit.ExtendedToolkit.ToolstripControls.ToolStripMenuItemUACSheld toolStripMenuItemUACSheld1;
-        private ExtendedControls.ExtendedToolkit.Controls.KryptonRichTextBoxExtended kryptonRichTextBoxExtended1;
+        //private ExtendedControls.ExtendedToolkit.Controls.KryptonRichTextBoxExtended kryptonRichTextBoxExtended1;
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kPal;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
