@@ -2,9 +2,18 @@
 
 =======
 
-| NuGet | Current NuGet Version | Github License |
-|---|---|---|
-| [![NuGet](https://img.shields.io/badge/NuGet-Krypton%20Extended%20.NET%205.450-brightgreen.svg)](https://www.nuget.org/packages/KryptonExtendedToolkit5450/) | ![Nuget](https://img.shields.io/nuget/v/KryptonExtendedToolkit5450.svg) | ![GitHub](https://img.shields.io/github/license/Wagnerp/Krypton-Toolkit-Suite-Extended-NET-5.450.svg)
+| Module Name | Current Version |
+|---|---|
+| <img src="https://img.shields.io/badge/Module-Core-orange.svg" /> | ![Nuget](https://img.shields.io/nuget/v/KryptonExtendedToolkit5450CoreModule) | 
+| <img src="https://img.shields.io/badge/Module-Colour Controls-orange.svg" /> | ![Nuget](https://img.shields.io/nuget/v/KryptonExtendedToolkit5450ExtendedColourControlsModule) | 
+| <img src="https://img.shields.io/badge/Module-Dialogs-orange.svg" /> | ![Nuget](https://img.shields.io/nuget/v/KryptonExtendedToolkit5450ExtendedDialogsModule) |
+| <img src="https://img.shields.io/badge/Module-Menu & Toolbar Items-orange.svg" /> | ![Nuget](https://img.shields.io/nuget/v/KryptonExtendedToolkit5450ExtendedMenuAndToolbarItemsModule) 
+| <img src="https://img.shields.io/badge/Module-Extended Standard Controls-orange" /> | ![Nuget](https://img.shields.io/nuget/v/KryptonExtendedToolkit5450ExtendedStandardControlsModule) |
+| <img src="https://img.shields.io/badge/Module-Floating Menu & Toolbars-orange.svg" /> | ![Nuget](https://img.shields.io/nuget/v/KryptonExtendedToolkit5450FloatingMenuAndToolbarsModule) | 
+| <img src="https://img.shields.io/badge/Module-IO Components-orange.svg" /> | ![Nuget](https://img.shields.io/nuget/v/KryptonExtendedToolkit5450IOComponentsModule) 
+| <img src="https://img.shields.io/badge/Module-Krypton Outlook Grid-orange.svg" /> | ![Nuget](https://img.shields.io/nuget/v/KryptonExtendedToolkit5450KryptonOutlookGridModule) |
+| <img src="https://img.shields.io/badge/Module-Navi Suite-orange.svg" /> | ![Nuget](https://img.shields.io/nuget/v/KryptonExtendedToolkit5450NaviSuiteModule) | 
+| <img src="https://img.shields.io/badge/Module-Task Dialogs-orange.svg" /> | ![Nuget](https://img.shields.io/nuget/v/KryptonExtendedToolkit5450TaskDialogsModule) | 
 
 =======
 
@@ -23,7 +32,7 @@ Please refer to [examples](https://github.com/Wagnerp/Krypton-Toolkit-Suite-Exte
 * Implement `WindowsAPICodePackModel.cs` class for dealing with **WindowsAPICodePack** features 
 * New `Palette Explorer` controls
 * Merged all settings into `Toolkit Settings.dll`
-* Begun work on [#70](https://github.com/Wagnerp/Krypton-Toolkit-Suite-Extended-NET-5.470/issues/70)
+* Begun work on [#50](https://github.com/Wagnerp/Krypton-Toolkit-Suite-Extended-NET-5.450/issues/50)
 * Implemented [NaviSuite](https://github.com/jacobmesu/Guifreaks-Navisuite) by [Jacobmesu](https://github.com/jacobmesu)
 * New file varifier app to work with May's file checksum calculator
 * New `KryptonFileInformationDialog` to replace the Windows default one with some extra features
@@ -43,13 +52,13 @@ Please refer to [examples](https://github.com/Wagnerp/Krypton-Toolkit-Suite-Exte
 * Outlook 2003 style toast notification
 * File checksum calculator (MD5, SHA-1, SHA-256, SHA-384, SHA-512 and RIPEMD-160)
 * New `KryptonPaletteManager` class for dealing with creating custom `KryptonPalette`'s
-* Ribbon enhancements, merge two ribbons together [#150](https://github.com/Wagnerp/Krypton-NET-5.470/issues/150)
+* Ribbon enhancements, merge two ribbons together [#150](https://github.com/Wagnerp/Krypton-NET-5.450/issues/150)
 * Capture version information from another file
 * Playground application reorganisation
 * Images of controls to show developers what they look like
 * Image resizing utility - resize & save images on the fly
 * New palette explorer user controls - will make it quicker to design the application
-* Fix palette theme selector, issue [#71](https://github.com/Wagnerp/Krypton-Toolkit-Suite-Extended-NET-5.470/issues/71)
+* Fix palette theme selector, issue [#71](https://github.com/Wagnerp/Krypton-Toolkit-Suite-Extended-NET-5.450/issues/71)
 * General tidyup of code & API updates
 * XML documentation files for DLLs
 * Upgraded to Krypton Toolkit Suite - version: **5.450.901**
@@ -90,7 +99,7 @@ Please refer to [examples](https://github.com/Wagnerp/Krypton-Toolkit-Suite-Exte
 ## 2018-06-25 Initial commit
 * One **new** theme called `Slate Silver`, stylised for the 2007/2010 and 2013 theme sets.
 * There are now 50+ **new** palettes to choose from.
-* A new toolstrip label capable of background gradeints is now available to use, as per [#28](https://github.com/Wagnerp/Krypton-Toolkit-Suite-Extended-NET-4.70/issues/28).
+* A new toolstrip label capable of background gradeints is now available to use, as per [#28](https://github.com/Wagnerp/Krypton-Toolkit-Suite-Extended-NET-4.50/issues/28).
 * Colours... colours... colours... We now have 26 **new** colours to choose from! Find the `xml` files in the `Palettes` folder, this will be updated regularly, so be sure to come back often! Alternatively, if you would like to request/submit a colour palette, then please submit a base colour in a hexadecimal format plus a suitable name for it on the `New Palette Ideas` issues thread.
 * Laid basic foundation for a designable `Krypton MessageBox`.
 * `KryptonNumericUpDown` control can now be used on menu & toolbar controls.
