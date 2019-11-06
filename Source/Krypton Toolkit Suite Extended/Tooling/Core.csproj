@@ -354,7 +354,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="KryptonToolkitSuite5450">
-      <Version>5.450.1254</Version>
+      <Version>5.450.1300</Version>
     </PackageReference>
     <PackageReference Include="WindowsAPICodePack">
       <Version>1.1.0</Version>
