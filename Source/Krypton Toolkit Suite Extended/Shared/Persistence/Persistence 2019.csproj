@@ -241,9 +241,6 @@
     <Compile Include="Version Framework\Classes\AssemblyVersion.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="AutoCompleteMenu-ScintillaNET">
-      <Version>1.6.2</Version>
-    </PackageReference>
     <PackageReference Include="EasyScintilla">
       <Version>1.0.5</Version>
     </PackageReference>
